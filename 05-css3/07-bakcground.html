@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>background</title>
+	<style>
+		body {
+			float: 12px 'Malgun Gothic',sans-serif;
+		}
+		/*중복사용 가능, 먼저쓴 것이 우선순위가 높다.*/
+		.box {
+			width: 400px;
+			height: 200px;
+			border: 3px solid black;
+			/* 이미지기준가로 이미지기준세로 / 이미지 가로길이 이미지 세로길이*/
+			background: 
+				/*url(img/icon.png) no-repeat 50px 30px,*/
+				/*url(img/icon2.png) no-repeat 55px 35px / 100% auto,*/
+				/*url(img/icon2.png) no-repeat 55px 35px / cover,*/
+				url(img/krakow-4472321_640.jpg) no-repeat 0 0 / cover;
+			/*padding영역에는 그림을 보이지 않는다.*/
+			background-clip: content-box;
+			/*이미지 기준을 content영역으로 바꾸어준다.*/
+			background-origin: content-box;
+			color: white;
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, recusandae at consectetur optio, temporibus nesciunt in ad iure rem quidem alias error, nostrum asperiores sint? Quia dolorum perspiciatis inventore quo odio aspernatur. Et, nobis sequi laboriosam rem. Tempore, a obcaecati.
+		</div>
+	</div>
+</body>
+</html>

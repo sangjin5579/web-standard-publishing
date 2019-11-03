@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>css Selector</title>
+	<style>
+		body {
+			font-size: 12px;
+		}
+		/*공통선택자 , */
+		h1, p {
+
+		}
+		/*자손손 선택자 ' ' */
+		#header p {
+			border: 3px solid red;
+		}
+		/*바로 하위 자식 선택자 > */
+		#header > h1 > em {
+			border: 1px solid green;
+		}
+		p.lead { 
+			color : #ff0000; 
+		}
+		/* 그것의 인접 선택자 + */
+		.list li + li {
+			background-color: blue;
+		}
+		/* 속성 선택자 [] */
+		a[title] {}
+
+		/* a css(우선순위 있음)*/
+		/* : 가상클래스*/
+		a:link {}
+		a:visited {}
+		a:hover {}
+		/*눌렀을 때*/
+		a:active {}
+		/*tab으로 접근했을 때*/
+		a:focus {}
+		/*가상클래스 첫줄*/
+		.lead:first-line {}
+		/*가상클래스 첫글자*/
+		.lead:first-letter {}
+		/*태그 내에서 시작 전*/
+		h1:before {}
+		/*태그 내에서 끝나기 전*/
+		h1:after {background-color: red !important}
+
+		/*
+		 #CSS 우선순위#
+		 !important(무조건) > inline style(1000) > id(100) > class(10) > type(태그, 1)
+		 
+		 ##같은 우선순위라면 나중에 선언한 것의 우선순위가 높다.
+		*/
+	</style>
+</head>
+<body>
+	<div id="wrap">	
+		<header>
+			<h1>css <em>selector</em></h1>
+			<p>Lorem ipsum dolor sit.</p>
+		</header>
+		<div id="content">
+			<p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, architecto.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, aperiam.</p>
+			<ol class="list">
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Lorem ipsum dolor sit amet.</li>
+			</ol>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque, impedit!</p>
+		</div>
+	</div>
+</body>
+
+</html>

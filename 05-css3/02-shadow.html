@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/* css3 접두어가 들어가는 경우 안들어가는 경우가 있다. => css3 generator사용
+			-webkit-attribute: value; => 크롬,사파이 브러우저
+			-moz-attribute: value; => 파이어폭스
+			-ms-attribute: value; => IE, Outlook
+			-o-attribute: value; => 오페라 브라우저
+			attribute: value; => 표준
+
+		*/
+		#wrap {
+			width: 600px;
+			margin: 0 auto;
+		}
+		#wrap h1 {
+			border: 1px solid #333;
+			padding: .5em; 
+			font: bold 100px arial,sans-serif;
+			text-transform: uppercase;
+			text-shadow:
+				 2px 2px 0 rgba(255,255,255,1),
+				 -20px 10px 0 rgba(0,0,0,.4);
+			/* 가로 세로 블록 스프레드 */
+			box-shadow: 
+				10px 10px 20px rgba(0,0,0,.5),
+				inset 5px 5px 30px 10px rgba(255,0,0,.3);
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>shadow</h1>
+	</div>
+</body>
+</html>

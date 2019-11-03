@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>imagemap</title>
+</head>
+<body>
+	<!-- 하나의 이미지에 링크영역을 분할하는 것 -->
+	<h1>이미지맵</h1>
+	<p>
+		<img src="img/map.gif" usemap="#map" alt="">
+		<map name="map" id="map">
+			<!-- 좌측상단점, 우측하단점 -->
+			<area shape="rect" coords="15,25,218,84" href="http://naver.com" alt="네이버로 이동">
+			<!-- 중심점,반지름 -->
+			<area shape="circle" coords="308,55,50" href="http://daum.net" alt="">
+			<!-- 순차점 -->
+			<area shape="poly" coords="550,34,570,48,57065,550,78,532,65,532,48" href="http://nate.com" alt="네이트로 이동">
+		</map>
+	</p>
+</body>
+</html>

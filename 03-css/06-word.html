@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>word-break, white-space</title>
+	<style>
+		body {
+			font-size: 16px;
+		}
+		.content, .content2, .content3 {
+			width: 500px;
+			border: 3px solid black;
+		}
+		.content p {
+			word-break: break-all;
+		}
+		.content2 p {
+			text-align: justify;
+
+		}
+		.content3 p {
+			text-align: justify;
+			word-break: break-all;
+		}
+		.white {
+			width: 600px;
+			border: 2px solid black;
+			white-space: pre;
+		}
+		.white2 {
+			width: 600px;
+			border: 2px solid black;
+			white-space: pre-wrap;
+		}
+		.white3 {
+			width: 600px;
+			border: 2px solid black;
+			white-space: pre-line;
+		}
+	</style>
+	<!-- 
+	    # word-break: break-all;
+	    	단어가 너무 길경우 하나의 단어로 인식 => overflow되어버린다. => 자동 줄바꿈해줌
+			justify 양쪽정렬의 경우 줄마다 띄어쓰기 간격이 달라지게 된다. => 일정하도록 깨뜨린다.	
+		# height는 내용에 맞게 늘어나도록 하는것이 낫다.
+
+		# white-space: 
+			pre : pre태그화
+			pre-wrap : pre 자동줄바꿈
+			pre-line : 들여쓰기 초기화
+			nowrap : 줄바꿈 없앰 
+		
+	
+	-->
+</head>
+<body>
+	<div class="content">
+		<p>Loremipsumdolorsitamet,consecteturadipisicingelit.Ad,eaque.Loremipsumdolorsitamet,consecteturadipisicingelit.Ad,eaque.</p>			
+	</div>
+	<div class="content2">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat temporibus blanditiis alias eaque voluptates nam iure quisquam illo cumque voluptas tempora, deleniti expedita eius deserunt eveniet necessitatibus aut excepturi consequatur et. Veritatis similique non qui quia voluptates sunt magni iste.</p>
+	</div>
+	<div class="content3">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat temporibus blanditiis alias eaque voluptates nam iure quisquam illo cumque voluptas tempora, deleniti expedita eius deserunt eveniet necessitatibus aut excepturi consequatur et. Veritatis similique non qui quia voluptates sunt magni iste.</p>
+	</div>
+	<hr>
+	<div class="white">
+		Lorem ipsum dolor 
+		sit amet, consectetur 
+		adipisicing elit. Fugiat 
+		temporibus blanditiis alias eaque voluptates nam iure quisquam illo cumque voluptas tempora, deleniti expedita eius deserunt eveniet necessitatibus aut excepturi consequatur et. Veritatis similique non qui quia
+		voluptates sunt magni iste.
+	</div>
+	<div class="white2">
+		Lorem ipsum dolor 
+		sit amet, consectetur 
+		adipisicing elit. Fugiat 
+		temporibus blanditiis alias eaque voluptates nam iure quisquam illo cumque voluptas tempora, deleniti expedita eius deserunt eveniet necessitatibus aut excepturi consequatur et. Veritatis similique non qui quia
+		voluptates sunt magni iste.
+	</div>
+	<div class="white3">
+		Lorem ipsum dolor 
+		sit amet, consectetur 
+		adipisicing elit. Fugiat 
+		temporibus blanditiis alias eaque voluptates nam iure quisquam illo cumque voluptas tempora, deleniti expedita eius deserunt eveniet necessitatibus aut excepturi consequatur et. Veritatis similique non qui quia
+		voluptates sunt magni iste.
+	</div>
+</body>
+</html>

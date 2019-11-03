@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+ <html lang="ko">
+ <head>
+ 	<meta charset="UTF-8">
+ 	<meta name="viewport" content="width=device-width,initial-scale=1">
+ 	<title>responsible web</title>
+ 	<link rel="stylesheet" href="css/style.css">
+ 	<!-- media를 print지정하여 덮어씌우면 프린트 출력용 css를 적용할 수 있다. -->
+ 	<link rel="stylesheet" href="css/printer.css" media="printer">
+	<style>
+	/* desktop first/mobile first*/
+	/*모바일에서 미디어 쿼리 적용시 px은 곤란할 수 있다. 애초에 폭을 %로 작업해두어야 한다. */
+	body {
+		color: #555;
+		font: 12px/1.5 'Trebuchet MS',sans-serif;
+	}
+	#wrap {
+		width: 970px;
+		margin: 0 auto;
+		padding: 0 15px;
+		box-sizing: border-box;
+	}	
+	@media screen and (min-width: 1200px) {
+		#wrap {
+			width: 1200px;
+		}
+	}
+	/*직관적으로 최대 width가 970px일 때.*/	
+	@media screen and (max-width: 970px) {
+		#wrap {
+			width: auto;
+		}
+	}
+	@media screen and (max-width: 970px) and (min-width: 481px) {
+		body {
+			background-color: yellow;
+		}
+	}
+	@media screen and (max-width: 480px) {
+		/*위의 미디어쿼리는 중첩적용*/
+		body {
+			font-size: 14px;
+		}
+	}
+	/*모바일 방향 orientation(어느방향 길어질때)
+		portrait: 세로보기;
+		landscape: 가로보기;
+	*/
+	@media screen and (orientation: portrait) {
+		h1:after {
+			content: ' protrait view';
+			font-size: .8em;
+			color: blue;
+		}
+	}
+	</style>
+ </head>
+ <body>
+ 	<div class="wrap">
+	 	<h1>LOGO</h1>
+	 	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita qui, molestias mollitia? Alias est dolores atque veritatis expedita ipsa quis cupiditate aut eos! Obcaecati ipsam cupiditate recusandae deleniti repudiandae iure necessitatibus omnis. Nisi, dolor nihil ex recusandae provident et. Enim excepturi ipsa quas recusandae labore similique neque sint. Nisi voluptates reprehenderit molestiae doloribus iusto. Tempora, voluptatum laborum. Quaerat, hic fuga!</p>
+	 </div>
+ </body>
+ </html>

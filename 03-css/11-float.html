@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>float</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			font: 12px/1.6 'Malgun Gothic',sans-serif
+		}
+		.wrap {
+			width: 600px;
+			margin: 0 auto;
+		}
+		.wrap h1 {
+			padding: 15px 0;
+		}
+		.wrap .thumb {
+			float: left; /*left | right*/
+			margin: 0 0 15px 0;
+		}
+		.wrap .text {
+			margin-left: 115px;
+			background-color: lime;
+		}
+		.wrap .text p {
+			margin-bottom: 15px;
+		}
+	</style>
+	<!--
+		#content를 중앙배치하고자 한다면, 많이 쓰이는 문법
+			width: ?px, margin: 0 auto  
+		font속성에는 필수로 size와 family가 적용되어야 한다.
+	 	#float: left
+	 		p같은 block을 content scope로 감싸 왼쪽배치.
+	 -->
+</head>
+<body>
+	<div class="wrap">
+		<h1>float test</h1>
+		<p class="thumb"><img src="http://placehold.it/100X120?text=profile" alt=""></p>
+		<div class="text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea saepe id magnam dignissimos, dolores, asperiores maiores. Quam molestiae aliquam quia, ullam, sapiente explicabo. Aut, quis cumque laboriosam earum obcaecati asperiores laudantium pariatur incidunt. Quam maxime explicabo unde, sed porro pariatur.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea saepe id magnam dignissimos, dolores, asperiores maiores. Quam molestiae aliquam quia, ullam, sapiente explicabo. Aut, quis cumque laboriosam earum obcaecati asperiores laudantium pariatur incidunt. Quam maxime explicabo unde, sed porro pariatur.</p>		
+		</div>
+	</div>
+</body>
+</html>

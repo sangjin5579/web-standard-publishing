@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>transform</title>
+	<style>
+		/* filter
+			blur() 번짐
+			brightness() 밝기
+			contrast() 대비 
+			drop-shadow() 그림자
+			grayscale() 흑백화
+			hue-rotate() 색상환 바꾸기
+			invert() 반대색상으로 보이기
+			opacity() 투명도
+			sepia() 브라운톤의 단색으로 보이기
+		*/
+		body {
+			font: 12px 'Malgun Gothic',sans-serif;
+		}
+		#wrap {
+			width: 900px;
+			margin: 0 auto;
+			*zoom: 1;
+		}
+		#wrap:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.filter {
+			float: left;
+			width: 300px;
+			border: 2px solid;
+			box-sizing: border-box;
+		}
+		.filter img {
+			width: 100%;
+			transition: all 2s;
+			cursor: pointer;
+		}
+		.filter.blur img:hover {
+			filter: blur(5px);
+		}
+		.filter.brightness img:hover {
+			filter: brightness(2);
+		}
+		.filter.brightness img:hover {
+			filter: brightness(2);
+		}
+		.filter.contrast img:hover {
+			filter: contrast(2);
+		}
+		.filter.drop_shadow img:hover {
+			/*가로 세로 번짐 색상*/
+			filter: drop-shadow(-30px 20px 0 rgba(0,0,0,.4));
+		}
+		.filter.grayscale img:hover {
+			filter: grayscale(1);
+		}
+		.filter.hue_rotate img:hover {
+			filter: hue-rotate(180deg);
+		}
+		.filter.invert img:hover {
+			filter: invert(1);
+		}
+		.filter.opacity img:hover {
+			filter: opacity(.5);
+		}
+		.filter.sepia img:hover {
+			filter: sepia(1);
+		}
+		.filter strong {
+			display: block;
+			padding: .3em .5em;
+		}
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="filter blur">
+			<img src="img/photo.jpg" alt="">
+			<strong>blur</strong>
+		</div>
+		<div class="filter brightness">
+			<img src="img/photo.jpg" alt="">
+			<strong>brightness</strong>
+		</div>
+		<div class="filter contrast">
+			<img src="img/photo.jpg" alt="">
+			<strong>contrast</strong>
+		</div>
+		<div class="filter drop_shadow">
+			<img src="img/photo.jpg" alt="">
+			<strong>drop_shadow</strong>
+		</div>
+		<div class="filter grayscale">
+			<img src="img/photo.jpg" alt="">
+			<strong>grayscale</strong>
+		</div>
+		<div class="filter hue_rotate">
+			<img src="img/photo.jpg" alt="">
+			<strong>hue_rotate</strong>
+		</div>
+		<div class="filter invert">
+			<img src="img/photo.jpg" alt="">
+			<strong>invert</strong>
+		</div>
+		<div class="filter opacity">
+			<img src="img/photo.jpg" alt="">
+			<strong>opacity</strong>
+		</div>
+		<div class="filter sepia">
+			<img src="img/photo.jpg" alt="">
+			<strong>sepia</strong>
+		</div>
+	</div>
+</body>
+</html>

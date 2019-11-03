@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Layout, 2column</title>
+	<style>
+		/* reset */
+		/*html,body {width:100%;height:100%}*/
+		body,p,h1,h2,h3,h4,h5,h6,ul,li,ol,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select{margin:0;padding:0}
+		body,input,textarea,select,button,table,th,td{font-family:'Malgun Gothic','돋움',Dotum,AppleGothic,sans-serif;font-size:12px}
+		img,fieldset{border:0}
+		img{vertical-align:top}
+		table{border-collapse:collapse}
+		ul,ol{list-style:none}
+		em,address{font-style:normal}
+		a{text-decoration:none}
+		a:hover,a:action,a:focus{text-decoration:underline}
+		caption {display: none}
+		legend, .blind{display:block;position:absolute;left:0;top:-9999em;overflow:hidden}
+
+		/* style */
+		#wrap {
+			width: 970px;
+			margin: 0 auto;
+			background-color: gray;
+		}
+		#header {
+			padding: 20px;
+			background-color: red;
+		}
+		#container {
+			padding-bottom: 30px;
+			*zoom:1;
+			background-color: lime;
+		}
+		#container:after {
+			content:'';
+			display: block;
+			clear: both;
+		}
+		#container #content {
+			float: right;
+			width: 600px;
+			background-color: blue;
+		}
+		#container #content .inn {
+			padding: 20px;
+		}
+		#container .aside {
+			float: left;
+			width: 370px;
+			background-color: green;
+		}
+		#container .aside .inn {
+			padding: 20px;
+		}
+		#footer { 
+			padding: 20px;
+			background-color: silver; 
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<!-- header -->
+		<div id="header">
+			<h1>LOGO</h1>
+			<p>MENU Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequuntur reprehenderit temporibus natus, aliquid, nobis expedita voluptatum doloribus amet suscipit facilis minima eligendi iure et ducimus laboriosam, quisquam quos illum sunt totam perspiciatis sed odit id porro. Blanditiis, aut doloremque!</p>
+			<p>MENU Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident consequuntur reprehenderit temporibus natus, aliquid, nobis expedita voluptatum doloribus amet suscipit facilis minima eligendi iure et ducimus laboriosam, quisquam quos illum sunt totam perspiciatis sed odit id porro. Blanditiis, aut doloremque!</p>
+		</div>
+		<!-- //header -->
+		<!-- container -->
+		<div id="container">
+			<!-- content -->
+			<div id="content">
+				<div class="inn">
+				<h2>Content</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta eaque quae, provident nemo architecto optio, corporis voluptates quo autem libero corrupti id non debitis sequi cum accusantium reiciendis eligendi nostrum atque, sit illum. Pariatur, eos laborum expedita officia velit dolorem a ipsam quae tempora repudiandae mollitia praesentium voluptas aspernatur necessitatibus tempore dolorum, quia aut explicabo aperiam, distinctio? Voluptatum optio at eveniet doloribus, quo corporis molestiae minima obcaecati natus, inventore earum vitae non qui suscipit possimus atque. Repellat eum numquam consectetur autem deserunt libero voluptatem soluta quo! Incidunt voluptatem vitae, quasi mollitia architecto repellat at est dignissimos qui sunt doloribus quisquam amet recusandae aperiam necessitatibus. Illo officiis ad corporis tempora, minus dolorem dignissimos, inventore aliquid cupiditate alias asperiores culpa? Minus quis architecto accusamus voluptatum a atque. Quidem maxime sint nesciunt eius praesentium fuga quae, omnis! Excepturi non recusandae, rerum velit iure repudiandae amet reiciendis expedita voluptatibus consequatur iste cupiditate ratione autem quaerat necessitatibus quidem aspernatur maiores, perspiciatis et. Dicta non dolorem fugit, obcaecati facilis sit qui? Debitis iure obcaecati alias quo voluptas. Dolor dolores, enim, accusamus nobis neque sequi laboriosam eveniet ratione repudiandae culpa. Praesentium ut dolor sed quidem a animi, consequatur totam tempore, porro impedit hic nihil laudantium, incidunt optio.</p>
+				</div>
+			</div>
+			<!-- //content -->
+			<!-- aside -->
+			<div class="aside">
+				<div class="inn">
+				<h2>Aside</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda corrupti facere reiciendis iusto aliquam ipsa repellat voluptatem dolores perferendis nulla? Fugit tempora quos aperiam voluptatem sed assumenda eius, voluptate laudantium quisquam commodi nam mollitia accusantium ipsam, doloribus consectetur libero, quis? Amet quo possimus consequuntur earum illum, vel consectetur fuga animi.</p>	
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut quibusdam unde voluptatum similique suscipit ipsum, beatae possimus alias dolore, explicabo, sequi maiores porro nisi sit dignissimos! Fugiat illum, recusandae tempora nemo debitis illo veritatis, beatae ullam voluptate architecto rem culpa.</p>
+				</div>
+			</div>
+			<!-- //aside -->
+		</div>
+		<!-- //container -->
+		<!-- footer -->
+		<div id="footer">
+			<address>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque eum hic repellendus, natus numquam, voluptas! Tenetur ex, est eos consequatur dignissimos id modi dolorum sit molestiae, fugiat iste culpa doloremque facilis odio. Perferendis dolores accusantium omnis ducimus, beatae cumque reprehenderit. Explicabo, at tempora quidem corrupti ipsum sit harum. Iure, nihil!</address>
+			<p>Copyright &copy; </p>
+		</div>
+		<!-- //footer -->
+	</div>
+</body>
+</html>

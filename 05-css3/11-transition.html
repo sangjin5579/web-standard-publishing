@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>transition</title>
+	<style>
+		/*transition은 초기 css에 적용한다.*/
+		body {
+			float: 12px 'Malgun Gothic',sans-serif;
+		}
+		#wrap {
+			width: 900px;
+			margin: 0 auto;
+		}
+		.box {
+			width: 100px;
+			height: 100px;
+			background-color: lime;
+
+			/*방향*/
+			/*transition-property: width;*/
+			/*진행시간*/
+			/*transition-duration: 3s;*/
+			/*초기 버티는시간*/
+			/*transition-delay: 1s;*/
+			/*일정한 속도*/
+			/*transition-timing-function: linear;*/
+			
+			/*한번에 적용*/
+			/*transition: all 3s 1s linear; */
+			
+			/*복합 응용*/
+			/*transition: 
+				width 3s linear,
+				height 1s 3s,
+				background-color 2s 4s;*/
+			
+			/*timing-function 설정 : 베지에곡선 그래프의 가상점의 위치*/
+			/* linear | ease | ease-in | ease-out | ease-in-out | steps(1, start) | steps(1, end) */
+			/*https://developer.mozilla.org/en-US/docs/Web/CSS/timing-function*/
+			/*transition: all 1s ease-in;*/
+			/*x축은 시간으로, 0~1내에서만 동작 => 1요소/4요소 */
+			/*transition: all 1s cubic-bezier(0.25, 1.5, 0.75, -0.5);*/	
+			/*steps-start/end : 동작시간을 횟수로 분할했을때 첫/마지막 동작과 시작/끝 시간이 일치*/
+			transition: all 1s steps(3, start);
+		}
+		.box:hover {
+			width: 100%;
+			height: 200px;
+			background-color: blue;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="box">
+			
+		</div>
+	</div>
+</body>
+</html>

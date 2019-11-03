@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>box model</title>
+	<style>
+		* {
+			margin:0;
+			padding:0;
+		} /*스타일의 초기화*/
+		.box {
+			display: inline;
+			width: 600px;
+			/*border: 5px solid black;*/
+			margin: 30px;
+			background-color: lime;
+		}
+	</style>
+	<!-- 
+		boxmodel
+			content width / height
+			border
+			top | right | bottom | left
+			border-style : solid | dashed | dotted | double | inset | outset | ridge | groove
+			border-width
+			border-color
+			padding : content와 border 사이의 공간
+				top | right | bottom | left
+			margin : border기준 바깥영역
+			top | right | bottom | left
+			box가 위아래 겹치면 top/bottom의 margin은 큰값이 적용된다.
+	 	#박스 사이징시 content를 %로 설정할 경우 border와 padding의 두께가 애메하게 설정될 여지가 있다.
+	 	#box-sizing: border-box (css3)
+	 		border까지의 값을 content사이즈로 맞추어 준다.
+	 	#display
+	 		inline : 줄마다 boxing
+	 		block : inline태그를 box화 하고싶다면.
+			inline-block
+	 -->
+</head>
+<body>
+	<div class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex ipsa doloremque quam animi inventore quos laudantium dolor obcaecati minima a at explicabo ad pariatur ab numquam quod ullam dolores unde nihil similique quidem odit, nemo dolorum facilis. Similique aliquam distinctio possimus alias quidem voluptate explicabo autem maiores consequatur aspernatur.
+	</div>
+	<div class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ex ipsa doloremque quam animi inventore quos laudantium dolor obcaecati minima a at explicabo ad pariatur ab numquam quod ullam dolores unde nihil similique quidem odit, nemo dolorum facilis. Similique aliquam distinctio possimus alias quidem voluptate explicabo autem maiores consequatur aspernatur.
+	</div>
+</body>
+</html>

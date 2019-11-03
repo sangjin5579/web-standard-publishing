@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>ul, ol, li, dl, dt, dd</title>
+</head>
+<body>
+	<!-- unorder list 목록, 자식은 무조건 li만 -->
+	<ul>
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet.</li>
+	</ul>
+	<!-- order list 목록에 순서포함 -->
+	<ol type="i">
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet.</li>
+		<li>Lorem ipsum dolor sit amet.</li>		
+	</ol>
+	<hr>
+	<ul>
+		<li><a href="#">menu1</a>
+			<ul>
+				<li><a href="#">submenu1</a></li>
+				<li><a href="#">submenu2</a></li>
+				<li><a href="#">submenu3</a></li>
+			</ul>
+		</li>
+		<li><a href="#">menu2</a></li>
+		<li><a href="#">menu3</a></li>
+		<li><a href="#">menu4</a></li>
+	</ul>
+	<hr>
+	<!-- dl : 정의항목/용어+설명 구조에 용이. -->
+	<dl>
+		<!-- 정의 inline태그만 -->
+		<dt><strong>Lorem ipsum dolor sit amet.</strong></dt>
+		<!-- 설명 어떤 블록태그가 와도 가능 -->
+		<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet id ducimus numquam ad asperiores consequuntur magni libero tempore, laborum!</dd>
+		<dt><strong>Lorem ipsum dolor sit amet.</strong></dt>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet id ducimus numquam ad asperiores consequuntur magni libero tempore, laborum!</dd>
+		<dd>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit eveniet id ducimus numquam ad asperiores consequuntur magni libero tempore, laborum!</dd>
+	</dl>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>background</title>
+	<style>
+		body {
+			float: 12px 'Malgun Gothic',sans-serif;
+		}
+		.box-r {
+			width: 300px;
+			height: 300px;
+			border-radius: 50%;
+			/* 구 */
+			background: rgb(252,252,252);
+			background: -moz-radial-gradient(30% 30%, ellipse cover,  rgba(252,252,252,1) 0%, rgba(125,126,125,1) 42%, rgba(14,14,14,1) 92%, rgba(96,96,96,1) 100%);
+			background: -webkit-radial-gradient(30% 30%, ellipse cover,  rgba(252,252,252,1) 0%,rgba(125,126,125,1) 42%,rgba(14,14,14,1) 92%,rgba(96,96,96,1) 100%);
+			background: radial-gradient(ellipse at 30% 30%,  rgba(252,252,252,1) 0%,rgba(125,126,125,1) 42%,rgba(14,14,14,1) 92%,rgba(96,96,96,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#606060',GradientType=1 );
+
+		}
+		.box {
+			width: 400px;
+			height: 200px;
+			border: 3px solid black;
+			color: white;
+			/*그라디언트 에디터는 generator참조.*/
+			background: rgb(30,87,153);
+			background: -moz-linear-gradient(top,  rgba(30,87,153,1) 0%, rgba(41,137,216,1) 77%, rgba(125,185,232,1) 100%);
+			background: -webkit-linear-gradient(top,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 77%,rgba(125,185,232,1) 100%);
+			background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(41,137,216,1) 77%,rgba(125,185,232,1) 100%);
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 );
+
+		}
+		
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<div class="box-r">
+			
+		</div>
+		<div class="box">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, recusandae at consectetur optio, temporibus nesciunt in ad iure rem quidem alias error, nostrum asperiores sint? Quia dolorum perspiciatis inventore quo odio aspernatur. Et, nobis sequi laboriosam rem. Tempore, a obcaecati.
+		</div>
+	</div>
+</body>
+</html>

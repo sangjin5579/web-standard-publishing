@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table style</title>
+	<style>
+		.tbl {
+			width: 600px;
+			table-layout: fixed;
+			/*border: 1px solid black;*/
+			border-collapse: collapse;
+		}
+		.tbl td, .tbl th {
+			border: 1px solid red;
+		}
+		.tbl caption {
+			caption-side: bottom;
+		}
+		.tbl .ex1,.tbl .ex2 {
+			empty-cells: hide;
+		}
+	</style>
+	<!-- 
+		보통 테이블 말고 셀에 border를 부여한다.
+		#border-collapse: collapse;
+			cell간 space영역 공백을 제거해준다.
+		#table-layout: fixed
+			cell마다 같은크기를 부여한다.	
+	 	#caption-side: bottom
+	 		한국에서는 잘 안쓰는데 caption의 위치를 조정한다.
+	 	#empty-cells: hide
+	 		만약 cell내용이 비어있을 경우 셀을 숨겨준다.	
+	 -->
+</head>
+<body>
+	<table class="tbl">
+		<caption>table caption</caption>
+		<thead>
+			<tr>
+				<th scope="col">cell1</th>
+				<th scope="col">cell1</th>
+				<th scope="col">cell1</th>
+				<th scope="col">cell1</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>Lorem ipsum dolor.lorem3lorem3lorem3lorem3lorem3</td>
+				<td>Lorem ipsum dolor.</td>
+				<td>Lorem ipsum dolor.</td>
+				<td>Lorem ipsum dolor.</td>
+			</tr>
+			<tr>
+				<td>Lorem ipsum dolor.</td>
+				<td>Lorem ipsum dolor.</td>
+				<td>Lorem ipsum dolor.</td>
+				<td>Lorem ipsum dolor.</td>
+			</tr>
+			<tr>
+				<td>Lorem ipsum dolor.</td>
+				<td>Lorem ipsum dolor.</td>
+				<td class="ex1"></td>
+				<td class="ex2"></td>
+			</tr>
+		</tbody>
+	</table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>table</title>
+</head>
+<body>
+<!-- scope = col | row : 제목이 나타내는 범위 -->
+<!-- rowspan | colspan : 병합 -->
+<table border width="100%">
+	<caption>table title</caption>
+	<!-- 칼럼에 속성 부여 -->
+	<colgroup>
+		<col width="25%">
+		<col width="25%">
+		<col width="25%">
+		<col>
+	</colgroup>
+	<thead>
+		<tr>
+			<!-- 제목이 나타내는 scope 적용범위 -->
+			<th scope="col">제목1</th>
+			<th scope="col">제목2</th>
+			<th scope="col">제목2</th>
+			<th scope="col">제목2</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td rowspan="3">cell</td>
+			<td>cell</td>
+			<td>cell</td>
+			<td>cell</td>
+		</tr>
+		<tr>
+<!-- 			<td>cell</td> -->
+			<td>cell</td>
+			<td>cell</td>
+			<td>cell</td>
+		</tr>	
+	</tbody>
+	<tfoot>
+		<tr>
+			<th scope="row">result</th>
+			<td colspan="3">...</td>
+			<!-- <td>...</td>
+			<td>...</td> -->
+		</tr>
+	</tfoot>
+</table>
+
+</body>
+</html>

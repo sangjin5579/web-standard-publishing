@@ -1,0 +1,38 @@
+<!-- 단어 정의와 약어, 작품의 제목 표현 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>dfn, abbr, cite</title>
+	<style>
+		p,span {
+			background: lime
+		}
+	</style>
+</head>
+<body>
+<!-- p : block태그(해당 row영역전부를 감싼다) -->
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing</p>
+
+<!-- span : inline태그(자기 영역만 감싼다) -->
+	<span>Lorem ipsum dolor sit amet.</span>
+	<span>Lorem ipsum dolor sit amet.</span>
+	<span>Lorem ipsum dolor sit amet.</span>
+	<span>Lorem ipsum dolor sit amet.</span>
+
+<!-- dfn : 화면에 보이는 요소 정의를 hover시 표현해준다. -->
+<p><dfn title="hover시 요소의 정의를 표현한다.">HTML</dfn></p>
+
+<!-- abbr : 어떤글의 축약인지 표현 -->
+<p>월드 와이드 웹 컨소시엄(<abbr title="World Wide Web Consortium">W3C</abbr>)</p>
+
+<!-- cite : 작품의 제목 표현 -->
+<p><cite>시차(we are)</cite> 우원재</p>
+
+<!-- small : 부가적인 설명 -->
+<p>값 : 50,000원 <small>(부가세별도)</small></p>
+</body>
+</html>

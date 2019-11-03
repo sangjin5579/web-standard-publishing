@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>background</title>
+	<style>
+		body {
+			background: url() no-repeat fixed 90% 20px;
+			/*90%는 이미지의 90%와 브라우저 90%를 일치시킨다는 의미*/
+			background-attachment: fixed;
+		}
+		.box {
+			border: 3px solid black;
+			padding: 30px;
+			background-repeat: repeat-x /*repeat | no-repeat | repeat-x | repeat-y*/ 
+			background-position: left top;
+		}
+	</style>
+	<!-- -붙어있는것은 나중에 써야 한다. 
+		#background-repeat: repeat-x /*repeat | no-repeat | repeat-x | repeat-y*/ 
+
+		#background-position: left(0) top(0);
+			left(0) center(50%) right(100%)
+			top(0) center(50%) bottom(100%)
+		#background: url() no-repeat fixed 90% 20px;
+			/*90%는 이미지의 90%와 브라우저 90%를 일치시킨다는 의미*/
+		#background-attachment: fixed => 배경을 스크롤해도 고정
+		#그림이 클 경우 box내에서 잘리게 된다.
+		background-size : 100% auto => 비율고정 나머지 잘라준다.
+						  cover => 비율고정 자동 자르기(css3)
+		background-clip : content-box => content에만 배경이 보이도록 한다.(css3)				  
+		background-origin : content-box => padding기준을 content 기준으로 변경해준다.(css3) 
+	-->
+</head>
+<body>
+	<div class="box">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laboriosam odio, possimus nesciunt laborum necessitatibus laudantium facilis! Neque rem, nemo doloribus odit. Illum id vero quod, delectus iste sequi eos reiciendis necessitatibus, soluta mollitia nam doloremque nobis asperiores dicta sapiente.
+	</div>
+</body>
+</html>

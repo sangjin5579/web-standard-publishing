@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>html form</title>
+</head>
+<body>
+	<!-- autocomplete : 자동완성 기본 on -->
+	<!-- autofocus : 최초 포커스 -->
+	<!-- novalidate : 검증하지 않는다. -->
+	<!-- required : 필수입력항목 -->
+	<!-- 용법 지키면 모바일에서 키보드 맞추어 등장 -->
+	<form method=""	action="" >
+		<fieldset>
+			<legend>html5 form</legend>
+			<p>
+				<label for="name">이름</label>
+				<input type="text" id="name" name="name" value="" disabled placeholder="황상진"
+				autofocus autocomplete="off">
+			</p>
+			<p>
+				<label for="usermail">이메일</label>
+				<input type="email" name="email" id="usermail" value="" required="">
+			</p>
+			<p>
+				<label for="userurl">웹사이트</label>
+				<input type="url" name="url" id="userurl" value="">
+			</p>
+			<p>
+				<label for="usernumber">수량</label>
+				<input type="number" name="number" id="usernumber" min="1" max="20" value="3">
+				<span>개</span>
+			</p>
+			<p>
+				<label for="userrange">범위</label>
+				<input type="range" name="range" id="userrange" min="0" max="100" step="10" value="30">
+				<span>개</span>
+			</p>
+			<p>
+				<label for="userdate">제출일</label>
+				<input type="date" name="date" id="userdate" min="2019-01-01" max="2019-12-30"	value="2019-09-08">
+			</p>
+			<p>
+				<label for="usercolor">색상</label>
+				<input type="color" name="color" id="usercolor" value="#ffffff">
+			</p>
+			<p>
+				<label for="usertel">연락처</label>
+				<input type="tel" name="tel" id="usertel" value="">
+			</p>		
+		</fieldset>
+		<input type="submit" value="전송">
+	</form>
+</body>
+</html>

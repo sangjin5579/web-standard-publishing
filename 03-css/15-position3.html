@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>position</title>
+	<style>
+		.box {
+			width: 200px;
+			padding: 20px;
+			border: 5px solid black;
+			background-color: rgba(255,0,0,.5);
+			font: 12px/1.6 verdana,sans-serif;
+		}
+		.box:first-letter {
+			font-size: 2em;
+			font-weight: bold;
+		}
+		.area {
+			position: relative;
+			width: 800px;
+			margin: 0 auto;
+			border: 5px dashed red;
+		} 
+		.a {
+			position: relative;
+			left: 0;
+			top:0;
+			background-color: rgba(255,0,0,.5)
+		}
+		.b {
+			position: relative;
+			left:50px;
+			margin-top:-100px
+			background-color: rgba(0,255,0,.5)}
+		.c {
+			position: relative;
+			left:100px;
+			margin-top:-100px;
+			background-color: rgba(0,0,255,.5)}
+	</style>
+	<!-- 
+		부모자식 relative간 위치조정은 margin-top을 이용한다.
+	 -->
+</head>
+<body>
+	<div class="area">
+		<div class="box a">
+			A Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque voluptas, quod labore. Temporibus voluptatum molestiae mollitia, qui aliquid alias commodi velit pariatur vero repellendus magni aut hic praesentium necessitatibus eum accusamus. Tempore cumque ipsam amet corrupti quia quibusdam fuga voluptatibus.
+		</div>
+		<div class="box b">
+			B Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque voluptas, quod labore. Temporibus voluptatum molestiae mollitia, qui aliquid alias commodi velit pariatur vero repellendus magni aut hic praesentium necessitatibus eum accusamus. Tempore cumque ipsam amet corrupti quia quibusdam fuga voluptatibus.
+		</div>
+		<div class="box c">
+			C Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque voluptas, quod labore. Temporibus voluptatum molestiae mollitia, qui aliquid alias commodi velit pariatur vero repellendus magni aut hic praesentium necessitatibus eum accusamus. Tempore cumque ipsam amet corrupti quia quibusdam fuga voluptatibus.
+		</div>
+	</div>
+	<hr>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam sunt, molestiae cumque, reprehenderit nesciunt aliquid debitis ipsum saepe molestias, fuga, autem alias sequi aut. Totam laudantium ut illo officia reprehenderit eum. Assumenda obcaecati, cum corporis rerum nemo, esse provident accusantium mollitia veniam suscipit et. Exercitationem aliquam deserunt eaque, placeat consequuntur maiores numquam, ea quo similique voluptate veniam fuga distinctio fugiat!</p>
+</body>
+</html>

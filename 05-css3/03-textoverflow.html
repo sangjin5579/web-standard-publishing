@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		/* 
+		*/
+		#wrap {
+			width: 600px;
+			padding: 20px;
+			margin: 0 auto;
+			border: 1px solid black;
+			border-width: 0 1px;
+			font: 12px arial,sans-serif;
+		}
+		.sample {
+			/*0.width가 설정되어야 한다.*/
+			display: block;
+			/*1.block에 width를 부여*/
+			width: 100%;
+			/*3.overflow hidden설정*/
+			overflow: hidden;
+			/*2.줄바꿈 안되도록*/
+			white-space: nowrap;
+			/*4.넘침에 대한 설정*/
+			text-overflow: ellipsis;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<p class="sample">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum quidem reprehenderit molestias dignissimos quis porro doloremque temporibus quasi, neque, nostrum autem praesentium dolor assumenda beatae illo quod ipsam, delectus. Vitae alias odit quod, velit rem eum sequi sint distinctio eaque explicabo beatae iste dolore repudiandae maxime ad voluptates nam atque!</p>
+		<span class="sample"></span>
+	</div>
+</body>
+</html>

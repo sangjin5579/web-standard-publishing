@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>flex</title>
+	<style>
+		body {
+			float: 12px 'Malgun Gothic',sans-serif;
+		}
+		/*flex는 부모에 부여하는 float, 해지기능 자동부여*/
+		/* 내부에 padding,margin부여 자율 가능*/
+		#wrap {
+			width: 900px;
+			margin: 0 auto;
+			display: flex;
+		}
+		#wrap h1 {
+			flex: 1;
+		}
+		#wrap .text {
+			flex: 3;
+		}
+	</style>
+</head>
+<body>
+	<div id="wrap">
+		<h1>flex example</h1>
+		<div class="text">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsum quas eum aspernatur sed dolorem quis, expedita quidem nesciunt est. Placeat explicabo assumenda sequi totam, quidem dicta possimus at minus a distinctio reprehenderit architecto inventore hic! Nemo ipsam quis quos ullam consectetur quibusdam fugiat eaque, iste, veritatis quisquam libero tempore.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsum quas eum aspernatur sed dolorem quis, expedita quidem nesciunt est. Placeat explicabo assumenda sequi totam, quidem dicta possimus at minus a distinctio reprehenderit architecto inventore hic! Nemo ipsam quis quos ullam consectetur quibusdam fugiat eaque, iste, veritatis quisquam libero tempore.</p>		
+		</div>
+	</div>
+</body>
+</html>

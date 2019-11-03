@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>clear</title>
+	<style>
+		img {
+			vertical-align: top;
+		}
+		.area {
+			width: 800px;
+			margin: 0 auto;
+			border: 3px dashed red;
+			/*zoom: 1; IE, Chrome*/
+			/* *zoom: 1; IE6, IE7 */
+		}
+		.area:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+		.area .thumb {
+			float:left;
+			border: 3px solid black;
+		}
+		.cls {
+			clear: left;
+		}
+	</style>
+	<!-- 
+		#float을 마무리 할 때는 float영역 내부에, 마지막에 적용한다.
+			.area:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+			*zoom: 1; IE6, IE7적용을 위해 area에 적용한다.
+			overflow: hidden => 간단히 할때 사용(.area)	
+	 -->
+</head>
+<body>
+	<div class="area">
+		<div class="thumb"><img src="http://placehold.it/100x120?text=1" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x120?text=2" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x120?text=3" alt=""></div>
+		<div class="thumb"><img src="http://placehold.it/100x120?text=4" alt=""></div>
+		<!-- clear 위치 -->
+	</div>
+	<p class="cls">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vitae tempore natus asperiores iusto dolor autem vero consequuntur quibusdam accusamus ut, atque optio nemo facilis deserunt ipsum excepturi tenetur illo quae in, nostrum ratione aut. Architecto, ut. Similique quis ipsam inventore quasi obcaecati. Saepe consequatur est ex recusandae, ut debitis!</p>
+</body>
+</html>
